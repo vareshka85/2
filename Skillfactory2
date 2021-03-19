@@ -1,10 +1,16 @@
-[33mcommit 552b2ae193b4d66bb025beed403f9296ad5558f6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+[33mcommit 67f11edc4c13e029cb5282d8cf94eca8094b2e46[m[33m ([m[1;36mHEAD -> [m[1;32mtestbranch00[m[33m)[m
+Author: Vareshka85 <vareshka85@mail.ru>
+Date:   Fri Mar 19 13:18:17 2021 +0300
+
+    A new file is added
+
+[33mcommit 552b2ae193b4d66bb025beed403f9296ad5558f6[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
 Author: Vareshka85 <vareshka85@mail.ru>
 Date:   Fri Mar 19 11:26:09 2021 +0300
 
     A modified file is added
 
-[33mcommit 0ef96bb18e557dc69dbb62e3438d473fabda0dcb[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[33mcommit 0ef96bb18e557dc69dbb62e3438d473fabda0dcb[m
 Author: Vareshka85 <vareshka85@mail.ru>
 Date:   Fri Mar 19 11:17:38 2021 +0300
 
