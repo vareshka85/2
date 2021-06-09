@@ -1,0 +1,50 @@
+def ranging(x):
+    for i in range(len(x)):
+        for j in range(len(x) - i - 1):
+            if x[j] > x[j + 1]:
+                x[j], x[j + 1] = x[j + 1], x[j]
+    return x
+
+
+def binary_search(list, object, left, right):
+    '''Поиск элемента object в списке list'''
+    if left > right:
+        return False
+    middle = left + (right - left) // 2
+    if list[middle] == object:
+        if list[0] == object:
+            return f'Введённое число - наименьшее в списке, позиция слелующего элемента в списке: 0'
+        if list[-1] == object:
+            return f'Введённое число - наибольшее в списке, позиция  элемента в списке: {len(list) - 1 }'
+        else:
+            x = 1
+            while list[middle] == list[middle - x]:
+                x += 1
+            return f'Позиция предыдущего элемента в списке: {middle - x }' f'Позиция следующего элемента в списке: {middle-x+2}'
+    elif object < list[middle]:
+        return binary_search(list, object, left, middle - 1)
+    else:
+        return binary_search(list, object, middle + 1, right)
+
+def input_number():
+    while type:
+        raw_string = input("Введите последовательность целых числа через пробел: ")
+        try:
+            list_base = list(map(int, raw_string.split()))
+            if len(list_base) == 0:
+                raise ValueError
+        except ValueError:
+            print("Неверный формат данных")
+        else:
+            break
+    while True:
+        number1 = input("Введите целое число: ")
+        try:
+            object = int(number1)
+        except ValueError:
+            print('"{0}" не является целым числом'.format(number1))
+        else:
+            break
+    formatted_list = list_base + [object]
+    print(binary_search(ranging(formatted_list), object, 0, len(formatted_list)))
+input_number()
